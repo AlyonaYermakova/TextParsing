@@ -11,8 +11,6 @@ public class MyServlet extends HttpServlet {
         String text = request.getParameter("text");
         request.setAttribute("text", text);
         request.getRequestDispatcher("/WEB-INF/result.jsp").forward(request, response);
-
-
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
