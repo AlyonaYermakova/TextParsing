@@ -8,7 +8,7 @@
     <body>
     <p><fmt:message key="input.text"/></p>
 
-    <form action="${pageContext.request.contextPath}/MyServlet" method="post">
+    <form action="${pageContext.request.contextPath}/Controller" method="post">
         <textarea name="text"> </textarea>
 
         <p><input type="submit" value="<fmt:message key="submit"/> "/></p>

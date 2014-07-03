@@ -6,12 +6,12 @@
          version="3.0">
 
     <servlet>
-        <servlet-name>MyServlet</servlet-name>
-        <servlet-class>servlet.MyServlet</servlet-class>
+        <servlet-name>Controller</servlet-name>
+        <servlet-class>servlet.Controller</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>MyServlet</servlet-name>
-        <url-pattern>/MyServlet</url-pattern>
+        <servlet-name>Controller</servlet-name>
+        <url-pattern>/Controller</url-pattern>
     </servlet-mapping>
 </web-app>
