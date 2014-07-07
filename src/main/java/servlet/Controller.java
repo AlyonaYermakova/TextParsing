@@ -2,6 +2,7 @@ package servlet;
 
 import action.Action;
 import action.ParseAction;
+import util.Parser;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -11,6 +12,7 @@ import java.io.IOException;
 
 public class Controller extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
         Action action = new ParseAction();
         String result = action.execute(request);
         request.getRequestDispatcher("/WEB-INF/result.jsp").forward(request, response);
