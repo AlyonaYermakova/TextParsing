@@ -3,7 +3,7 @@ package entity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AbstractCompoundText<T extends TextPart> implements CompoundText {
+public abstract class AbstractCompoundText<T extends TextPart> implements CompoundText {
     public List<T> components;
 
     public AbstractCompoundText() {

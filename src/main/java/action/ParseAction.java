@@ -1,7 +1,7 @@
 package action;
 
 import entity.Text;
-import util.Parser;
+import parser.Parser;
 
 import javax.servlet.http.HttpServletRequest;
 

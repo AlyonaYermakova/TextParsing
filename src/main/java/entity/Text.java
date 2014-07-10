@@ -1,7 +1,5 @@
 package entity;
 
-import util.Parser;
-
 public class Text extends AbstractCompoundText<Paragraph> implements TextPart {
     String inputText;
 
