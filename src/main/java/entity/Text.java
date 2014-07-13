@@ -1,16 +1,17 @@
 package entity;
 
-public class Text extends AbstractCompoundText<Paragraph> implements TextPart {
-    String inputText;
+import parser.Parser;
 
-    public Text(String inputText) {
-        this.inputText = inputText;
+public class Text extends AbstractCompoundText<Paragraph> implements TextPart {
+    public Text() {
+    }
+
+    public Text(String text) {
+        getElements().addAll(Parser.parseParagraph(text));
     }
 
     @Override
     public String toString() {
-        return "Text{" +
-                "inputText='" + inputText + '\'' +
-                '}';
+        return super.toString();
     }
 }
